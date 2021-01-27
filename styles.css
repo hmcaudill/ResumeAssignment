@@ -1,0 +1,126 @@
+/*
+Colorzzz
+#2c3835 - thunder jade
+#73EACC - under the sea
+#B5E6D9 - ocean mist
+#326659 - coastal pine
+#8DB3A9 - nautilus
+*/
+
+
+/* global styles */
+  * {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+/*main body styles*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.25;
+    background-color: #B5E6D9;
+}
+
+/*styles for images*/
+  img {
+    max-width: 300px;
+}
+
+/*link styles*/
+  a {
+    color: #326659;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+/*heading styles*/
+  h1 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+  h2 {
+    font-size: 30px;
+    font-style: italic;
+}
+header {
+    background: #326659;
+    color: #8DB3A9;
+    padding: 10px 10px 10px 25px;
+  }
+
+/*section styles*/
+section {
+    padding: 10px;
+}
+.work li {
+    list-style-type: disc;
+}
+
+  /* Contact Info and Footer */
+  footer {
+    background: #2c3835;
+    color: #F7FFF7;
+    text-align: center;
+  }
+  footer li{
+      list-style-type: none;
+  }
+  footer a {
+      color: #B5E6D9;
+  }
+  
+  /* Responsive*/
+  @media screen and (min-width: 750px) {
+  
+    header {
+      text-align: center;
+    }
+  
+    .projects {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .projects img{
+        border: 1px solid #2c3835;
+    }
+  
+    .work {
+        text-align: justify;
+    }
+    .education {
+        background-color: #8DB3A9;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    footer {
+        width: 50%;
+        float: right;
+        line-height: 1.88;
+    }
+}
+
+    @media screen and (min-width: 1000px) {
+        .projectsection{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .work {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        .work h2 {
+            text-align: center;
+        }
+        .education {
+            text-align: center;
+        }}
