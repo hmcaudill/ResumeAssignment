@@ -6,107 +6,7 @@ Colorzzz
 #326659 - coastal pine
 #8DB3A9 - nautilus
 */
-
-
-/* global styles */
-  * {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-/*main body styles*/
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 1.25;
-    background-color: #B5E6D9;
-}
-
-/*styles for images*/
-  img {
-    max-width: 300px;
-}
-
-/*link styles*/
-  a {
-    color: #326659;
-    font-weight: bold;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-
-/*heading styles*/
-  h1 {
-    font-size: 50px;
-    color: whitesmoke;
-}
-  h2 {
-    font-size: 30px;
-    font-style: italic;
-}
-header {
-    background: #326659;
-    color: #8DB3A9;
-    padding: 10px 10px 10px 25px;
-  }
-
-/*section styles*/
-section {
-    padding: 10px;
-}
-.work li {
-    list-style-type: disc;
-}
-
-  /* Contact Info and Footer */
-  footer {
-    background: #2c3835;
-    color: #F7FFF7;
-    text-align: center;
-  }
-  footer li{
-      list-style-type: none;
-  }
-  footer a {
-      color: #B5E6D9;
-  }
-  
-  /* Responsive*/
-  @media screen and (min-width: 750px) {
-  
-    header {
-      text-align: center;
-    }
-  
-    .projects {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .projects img{
-        border: 1px solid #2c3835;
-    }
-  
-    .work {
-        text-align: justify;
-    }
-    .education {
-        background-color: #8DB3A9;
-        width: 50%;
-        margin: 0;
-        padding: 0;
-        float: left;
-    }
-    footer {
-        width: 50%;
-        float: right;
-        line-height: 1.88;
-    }
-}
-
+/*
     @media screen and (min-width: 1000px) {
         .projectsection{
             width: 50%;
@@ -124,3 +24,159 @@ section {
         .education {
             text-align: center;
         }}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, arial;
+}
+
+/*heading styles*/
+header {
+  background-color:#2c3835;
+  text-align: center;
+  border-bottom: 5px solid #326659;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 50px;
+  color: #B5E6D9;
+  width: 100%;
+  text-shadow: 3px 3px #326659;
+}
+header h2 {
+  font-size: 30px;
+  font-style: italic;
+  width: 100%;
+  color:  #326659;
+  font-size: 1.5em;
+}
+header p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color:  #B5E6D9;
+  font-size: .75em;
+}
+/*projects section*/
+.projects {
+  width: 100%;
+  text-align: center;
+}
+.projects img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #326659;
+  border-bottom: 3px solid #326659;
+}
+.projectsection {
+  border: 2px ridge #2c3835;
+  margin-top: 10px;
+  background-color: #B5E6D9; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.projects h2 {
+  font-style: italic;
+}
+.projects a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #2c3835;
+}
+
+/*work experience*/
+.work {
+  background-color: #73EACC;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #2c3835;
+  margin-bottom: 20px;
+}
+.worksection {
+  background-color: #B5E6D9;
+  padding: 10px;
+}
+.worksection h3{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.date {
+  font-style: italic;
+  color: #2c3835;
+  font-weight: bold;
+}
+.worksection ul {
+  margin-left: 40px; 
+  padding-left: 0;
+  list-style-type: circle;
+  font-size: .9em;
+}
+
+/*education section*/
+.education {
+  border: 2px solid #2c3835;
+  background-color: #8DB3A9;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.educationsection {
+  background-color:  #B5E6D9;
+  padding: 5px;
+}
+.educationsection h3 {
+  font-style: italic;
+}
+
+/* Contact Info and Footer*/
+footer {
+  background: #2c3835;
+  color: #73EACC;
+  text-align: center;
+  border-top: 10px solid #B5E6D9;
+  padding-top: 10px;
+}
+footer li{
+  list-style-type: none;
+}
+footer a {
+  color: #B5E6D9;
+}
+
+
+/*Responsive*/
+@media screen and (min-width: 650px) {
+  .projectsection{
+    width: 45%;
+    display: inline-block;
+    box-shadow: 2px 5px #326659;
+  }
+}
+@media screen and (min-width: 800px) {
+ .work {
+   width: 68%;
+   display: block;
+   float: left;
+   margin-top: 20px;
+ }
+ .education {
+   width: 25%;
+   display: block;
+   float: right;
+   margin-top: 20px;
+ }
+ footer {
+   display: block;
+   width: 100%;
+   float: right;
+ }
+}
+@media screen and (min-width: 1000px) {
+  .projectsection{
+    width: 30%;
+    display: inline-block;
+    box-shadow: 2px 5px #326659;
+  }
+}
